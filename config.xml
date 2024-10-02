@@ -18,7 +18,7 @@
 	<Setting name="Alma_Institution_Code" value="" type="string">
       <Description>This is your institutional Alma Code.  Example:  01SUNY_GEN</Description>
     </Setting>
-	<Setting name="Full_Alma_URL" value="https://suny-alb.alma.exlibrisgroup.com" type="string">
+	<Setting name="Full_Alma_URL" value="" type="string">
       <Description>This is your Full Alma URL. Example: https://suny-gen.alma.exlibrisgroup.com</Description>
     </Setting>
     <Setting name="Alma_Users_API_Key" value="" type="string">

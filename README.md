@@ -3,7 +3,7 @@ The purpose of this ILLiad Server Addon is to send Lending requests from ILLiad 
 
 _Check out the Alma Borrowing Request Sender wiki for installation instructions:_
 
-https://github.com/Hypolymer/Alma_Borrowing_Request_Sender/wiki
+https://github.com/Hypolymer/Alma_Lending_Request_Sender/wiki
 
 **This Server Addon was developed by:**
 - Bill Jones (SUNY Geneseo)

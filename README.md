@@ -20,6 +20,6 @@ https://github.com/Hypolymer/Alma_Lending_Request_Sender/wiki
 
 **Text files contained in the Addon for configuration:**
 - The Addon uses a file called error_routing.txt to route specific API numerical errors to specific ILLiad queues
-- The Addon uses a file called pseudopatron_crosswalk.txt to crosswalk between the ILLiad Borrowing Institution OCLC Symbol, the pseudopatron username, and the Alma Pickup Location code (Example: GENMN)
+- The Addon uses a file called pseudopatron_crosswalk.txt to crosswalk between the ILLiad Borrowing Institution OCLC Symbol, the pseudopatron username, and the Alma Pickup Location code (Example: ALL_LIBRARIES,borrowing_pseudopatron,GENMN)
 - The Addon uses a file called process_type_router.txt to route specific process_type values (like MISSING, or IN BINDERY, or RESERVES) to specific queues
 - The Addon uses a file called excluded_locations.txt to make specific shelving locations unavailable for Hold requests 

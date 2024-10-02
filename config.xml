@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>ALMA_LENDING_REQUEST_SENDER</Name>
+  <Author>Bill Jones, SUNY Geneseo; Tim Jackson, SUNY SLSS; and Angela Persico, University at Albany</Author>
+  <Version>1.24</Version>
+  <Active>False</Active>
+  <Type>Server</Type>
+  <Description>This Server addon allows ILLiad to send an Interlibrary Loan Lending request to a pseudopatron in Alma via the Alma Users API.</Description>
+  <Forms />
+  <Permissions />
+  <Settings>
+    <Setting name="AddonWorkerName" value="LendingSender" type="string">
+      <Description>This is the name you give the Addon for the rerun checker. If you are using more than one Addon, give each Addon a different name.</Description>
+    </Setting>
+    <Setting name="Alma_Base_URL" value="https://api-na.hosted.exlibrisgroup.com/almaws/v1" type="string">
+      <Description>This setting value is the base URL for Alma API. It is your Alma API server,i.e., https://api-na.hosted.exlibrisgroup.com/almaws/v1.</Description>
+    </Setting>
+	<Setting name="Alma_Institution_Code" value="" type="string">
+      <Description>This is your institutional Alma Code.  Example:  01SUNY_GEN</Description>
+    </Setting>
+	<Setting name="Full_Alma_URL" value="https://suny-alb.alma.exlibrisgroup.com" type="string">
+      <Description>This is your Full Alma URL. Example: https://suny-gen.alma.exlibrisgroup.com</Description>
+    </Setting>
+    <Setting name="Alma_Users_API_Key" value="" type="string">
+      <Description>Input your Alma Users API Key (Read and Write access needed).</Description>
+    </Setting>	
+    <Setting name="Alma_Bibs_API_Key" value="" type="string">
+      <Description>Input your Alma Bibs API Key (Read access needed).</Description>
+    </Setting>				
+    <Setting name="ItemSearchQueue" value="ALMA_RS_TEST" type="string">
+      <Description>The queue the Addon will monitor to process new Borrowing requests.</Description>
+    </Setting>
+    <Setting name="ItemInExcludedLocationNeedsReviewQueue" value="NEEDS_REVIEW_ITEM_IN_EXCLUDED_LOCATION" type="string">
+      <Description>The queue a Transaction will be moved to if the Borrowing Request Alma API call fails.</Description>
+    </Setting>
+    <Setting name="ItemSuccessHoldRequestQueue" value="ALMA_HOLD_SUCCESS" type="string">
+      <Description>The queue a Transaction will be moved to if the Hold Request Alma API call fails.</Description>
+    </Setting>
+    <Setting name="ItemFailHoldRequestQueue" value="ALMA_HOLD_FAILURE" type="string">
+      <Description>The queue a Transaction will be moved to if the Hold Request Alma API call fails.</Description>
+    </Setting>
+    <Setting name="NoISBNandNoOCLCNumberReviewQueue" value="Awaiting ISBN Lookup" type="string">
+      <Description>The queue a Transaction will be moved to if the Hold Request Alma API call fails.</Description>
+    </Setting>	
+    <Setting name="UltimateDebug" value="false" type="boolean">
+      <Description>When set to true, this enables additional debugging notes in the ILLiad transaction.</Description>
+    </Setting>	
+  </Settings>
+  <Files>
+    <File>ALMA_LENDING_REQUEST_SENDER.lua</File>
+  </Files>
+</Configuration>

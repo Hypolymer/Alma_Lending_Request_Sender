@@ -1,0 +1,4 @@
+INFO:  Place one excluded Shelving Location per line.  The Shelving Location name must match exactly.
+INFO:  For Physical Items, the Shelving Location is in the SRU lookup, under the AVA tag, using subfield 'C'
+INFO:  For Electronic Items, the Shelving Location is in the SRU lookup, under the AVE tag, using subfield 'M'
+Schrader Hall Storage

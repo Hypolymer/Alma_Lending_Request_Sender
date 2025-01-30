@@ -1,4 +1,4 @@
-# Alma_Lending_Request_Sender
+# Alma Lending Request Sender ILLiad Server Addon
 The purpose of this ILLiad Server Addon is to send Lending requests from ILLiad to Alma as Hold requests for a pseudopatron.
 
 _Check out the Alma Borrowing Request Sender wiki for installation instructions:_
